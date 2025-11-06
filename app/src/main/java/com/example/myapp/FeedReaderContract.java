@@ -4,7 +4,7 @@ import android.provider.BaseColumns;
 
 public final class FeedReaderContract {
 
-    private FeedReaderContract() { } // Evita instanciación
+    private FeedReaderContract() { }
 
     public static final class FeedEntry implements BaseColumns {
         public static final String TABLE_NAME = "personas";

@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
             app:title="Registro de Personas" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -87,17 +87,17 @@
                     android:id="@+id/btnActualizar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:backgroundTint="@color/purple_500"
                     android:text="Actualizar"
-                    android:textColor="@android:color/white" />
+                    android:backgroundTint="?attr/colorSecondary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
 
                 <Button
                     android:id="@+id/btnBuscar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Buscar"
-                    android:backgroundTint="@color/teal_700"
+                    android:backgroundTint="?attr/colorTertiary"
                     android:textColor="@android:color/white"
                     android:layout_marginBottom="8dp" />
 
@@ -118,11 +118,10 @@
                     android:backgroundTint="@android:color/holo_blue_dark"
                     android:textColor="@android:color/white" />
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
-    <!-- Botón flotante opcional -->
+    <!-- Botón flotante -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
