@@ -1,6 +1,7 @@
 package com.example.myapp;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -39,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
         btnActualizar.setOnClickListener(v -> actualizar());
         btnBuscar.setOnClickListener(v -> buscar());
         btnEliminar.setOnClickListener(v -> eliminar());
-        btnListar.setOnClickListener(v -> listar());
+        btnListar.setOnClickListener(v ->
+                startActivity(new Intent(this, ListadoActivity.class))
+        );
 
         binding.fab.setOnClickListener(view ->
                 Snackbar.make(view, "Nuevo registro", Snackbar.LENGTH_LONG)
